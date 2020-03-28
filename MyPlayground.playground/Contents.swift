@@ -11,17 +11,27 @@ class Dog {
         self.age = age
     }
     
+    func bark() {
+        print("Woof.")
+    }
+    
 }
 
 class SuperDog: Dog {
     func fly() {
         print("\(self.name) is flying!!!")
     }
+    
+    override func bark() {
+        print("Superwoof!")
+    }
 }
 
 
 var baylee = SuperDog("Baylee", "Mutt", 10)
-
+baylee.bark()
+var ginnie = Dog("Ginnie", "King Charles Cavalier Spaniel", 10)
+ginnie.bark()
 baylee.fly()
 
 
