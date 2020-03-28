@@ -24,3 +24,10 @@ for var i in 0..<8 {
     array[i] = i
 }
 print(array)
+
+var months: [Int: String] = [1: "January", 2: "February", 3: "March", 4: "April"]
+for month in months {
+    print(month.value)
+}
+
+
