@@ -30,4 +30,17 @@ for month in months {
     print(month.value)
 }
 
+class Dog {
+    var breed = ""
+    var age = 0
+}
+
+var baylee = Dog()
+baylee.breed = "Mutt"
+baylee.age = 10
+
+print("Baylee is a \(baylee.breed) who is \(baylee.age) years old.")
+
+
+
 
