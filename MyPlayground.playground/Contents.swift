@@ -18,3 +18,9 @@ func addNumbers(a: Int, b: Int) -> Int {
 }
 
 addNumbers(a: 6, b: 7)
+
+var array = [Int](repeating: 0, count: 8)
+for var i in 0..<8 {
+    array[i] = i
+}
+print(array)
