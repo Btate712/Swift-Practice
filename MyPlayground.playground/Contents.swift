@@ -15,6 +15,10 @@ class Dog {
         print("Woof.")
     }
     
+    func sayHi() {
+        print("Hello, my name is \(self.name). I'm a \(age) year old \(breed).")
+    }
+    
 }
 
 class SuperDog: Dog {
@@ -27,12 +31,16 @@ class SuperDog: Dog {
     }
 }
 
+var myDogs = [Dog]()
+myDogs.append(Dog("Baylee", "Mutt", 10))
+myDogs.append(Dog("Molly", "Lab", 12))
+myDogs.append(Dog("Missy", "Lab", 100))
 
-var baylee = SuperDog("Baylee", "Mutt", 10)
-baylee.bark()
-var ginnie = Dog("Ginnie", "King Charles Cavalier Spaniel", 10)
-ginnie.bark()
-baylee.fly()
+for dog in myDogs {
+    dog.sayHi()
+}
+
+
 
 
 
