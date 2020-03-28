@@ -31,13 +31,17 @@ for month in months {
 }
 
 class Dog {
-    var breed = ""
-    var age = 0
+    var breed: String
+    var age: Int
+    
+    init(_ breed: String, _ age: Int) {
+        self.breed = breed
+        self.age = age
+    }
+    
 }
 
-var baylee = Dog()
-baylee.breed = "Mutt"
-baylee.age = 10
+var baylee = Dog("Mutt", 10)
 
 print("Baylee is a \(baylee.breed) who is \(baylee.age) years old.")
 
